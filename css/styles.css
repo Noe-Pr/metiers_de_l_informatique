@@ -27,6 +27,8 @@ body {
     margin: 0 auto;
     background: var(--bg-color);
     color: var(--text-color);
+    max-width: 2200px;
+    min-width: 1500px;
 }
 
 
@@ -54,6 +56,8 @@ header.header {
 /* Personnalisation de la barre de menu */
 header.header img {
     width: 150px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
 
@@ -71,6 +75,7 @@ header.header img {
     padding: 20px 50px;
     color: rgb(255, 255, 255);
     font-size: 70px;
+    /* font-size: 4.4rem; */
 }
 
 
@@ -86,6 +91,7 @@ header.header img {
 
 /* Personnalisation du menu */
 nav {
+    display: block;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -98,6 +104,7 @@ nav {
 
 /* Personnalisation des éléments de la barre de menu */
 nav a {
+    display: block;
     color: #fff;
     text-decoration: none;
     margin: 0 20px;
@@ -107,6 +114,7 @@ nav a {
 
 /* Applique un soulignement lorsque la souris survole la barre de menu */
 .nav a::after {
+    display: block;
     content: "";
     position: absolute;
     left: 0;
@@ -123,6 +131,19 @@ nav a {
     transform: translateY(0);
     opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .services-container {
     display: flex;
@@ -147,7 +168,7 @@ nav a {
 }
 
 .services-container .services-box:hover {
-    border-color: var(--main-color);
+    border-color: rgba(15, 15, 156, 0.919);
     transform: scale(1.02);
 }
 
@@ -203,10 +224,10 @@ nav a {
 
 .section-titre {
     font-size: 50px;
-    font-weight: 100;
     margin-left: 70px;
     padding-top: 50px;
 }
+
 
 /* Changer la couleur de fond une fois sur deux */
 .categoriesmetiers1 {
@@ -230,7 +251,7 @@ nav a {
 }
 .categoriesmetiers-container .categoriesmetiers-box {
     position: relative;
-    border-radius: 2rem;
+    border-radius: 5%;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
@@ -307,7 +328,7 @@ nav a {
     padding: 10px 75px;
     background-color: rgba(0, 0, 121, 0.855);
     color: #ffffff;
-    border-radius: 50px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
     transition: 200ms;
@@ -324,9 +345,10 @@ nav a {
 /* Création du bas de page */
 .down-page {
     background-color: black;
-    background-size: cover;
-    height: 200px;
+    /* height: 200px; */
     padding: 10px;
+    margin-top: 50px;
+    background-size: cover;
 }
 
 /* Création du bas de page : date de création */
@@ -350,7 +372,7 @@ nav a {
     width: 100%;
     height: 1px;
     margin-left: -45px;
-    margin-top: 55px;
+    margin-top: 65px;
 }
 
 
@@ -374,6 +396,7 @@ nav a {
     background-color: black;
     color : white;
     margin-left: 100px;
+    margin-bottom: 30px;
     justify-content: space-between;
     font-size: 15px;
 }
@@ -402,20 +425,32 @@ nav a {
 
 
 /* Personnalisation de la barre de détails */
-nav.navi {
+.navi {
+    background: #000;
     color: #fff;
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 90%;
-    margin-left: 80px;
-    margin-top: 70px;
+    width: 100%;
+    margin-top: 80px;
+    padding-left: 0;
+    margin-left: 0;
     font-size: 15px;
+    box-sizing: border-box;
 }
 
+.navi1 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.navi2 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
 /* Personnalisation des éléments de la barre de détails */
-nav.navi a {
+.navi a {
     color: #fff;
     text-decoration: none;
     margin: 0 20px;
@@ -423,9 +458,13 @@ nav.navi a {
     cursor: pointer;
 }
 
+.nav-links {
+    list-style: none;
+    display: flex;
+}
 
 /* Soulignement lorsque la souris survole la barre de détails */
-nav.navi a:before {
+.navi1 a:before {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -437,9 +476,11 @@ nav.navi a:before {
     transform: scaleX(0);
     transform-origin: center;
 }
-nav.navi a:hover:before {
+.navi1 a:hover:before {
     transform: scaleX(1);
 }
+
+
 
 /* Création du bouton pour revenir en haut de la page */
 .remonter {
@@ -567,8 +608,40 @@ nav.navi a:hover:before {
     flex: 1;
 }
 
-/* Personnalisation des images de la page des icons developpement */
+
+
+
+
 .developpeur {
-    width: 90%;
-    padding-left: 60px;
+    background-color: var(--second-bg-color);
+    border-radius: 30px;
+    height: 550px;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 3px;
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    flex-direction: column;
 }
+
+.developpeur2 {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 550px;
+    width: 550px;
+}
+
+.description1 {
+    padding-top: 20px;
+    font-size: 2rem;
+}
+
+.description2 {
+    font-size: 1.2rem;
+}
+
+
+
+
+

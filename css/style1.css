@@ -9,6 +9,8 @@
 
 body {
     background: #020410;
+    max-width: 2200px;
+    min-width: 1500px;
 }
 
 .header {
