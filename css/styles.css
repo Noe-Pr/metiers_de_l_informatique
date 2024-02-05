@@ -22,7 +22,6 @@ html {
 }
 
 
-/* Suppression de la marge par défaut de la page */
 body {
     margin: 0 auto;
     background: var(--bg-color);
@@ -30,7 +29,6 @@ body {
     max-width: 2200px;
     min-width: 1500px;
 }
-
 
 /* Personnalisation de la barre de scroll */
 body::-webkit-scrollbar {
@@ -233,6 +231,7 @@ nav a {
 .categoriesmetiers1 {
     background: var(--second-bg-color);
     margin-top: 0;
+    padding-bottom: 60px;
 }
 .categoriesmetiers2 {
     background: var(--bg-color);
@@ -257,7 +256,7 @@ nav a {
     display: flex;
 }
 
-/* Création des animations pour les images */
+/* Zoom des images des métiers */
 .categoriesmetiers-box img {
     width: 100%;
     transition: .5s ease;
@@ -266,6 +265,7 @@ nav a {
     transform: scale(1.1);
 }
 
+/* Apparition du nom des métiers */
 .categoriesmetiers-box .categoriesmetiers-layer {
     position: absolute;
     bottom: 0;
@@ -281,7 +281,6 @@ nav a {
     transform: translateY(100%);
     transition: .5s ease;
 }
-
 .categoriesmetiers-box:hover .categoriesmetiers-layer {
     transform: translateY(0);
 }
@@ -311,7 +310,7 @@ nav a {
 
 
 /* Personnalisation des boutons */
-.bouton {
+/* .bouton {
     display: inline-block;
     padding: 5px 10px;
     margin-left: 20px;
@@ -320,20 +319,17 @@ nav a {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-}
+} */
 
 /* Personnalistion du texte du bouton voir plus */
 .textvoirplus {
     font-size: 20px;
-    padding: 10px 75px;
-    background-color: rgba(0, 0, 121, 0.855);
     color: #ffffff;
+    padding: 10px 75px;
+    background: linear-gradient(45deg, rgb(0, 0, 55), rgb(10, 10, 171));
     border-radius: 10px;
-    border: none;
     cursor: pointer;
-    transition: 200ms;
-    text-align: center;
-    margin-bottom: 60px;
+    border: none;
 }
 
 /* Rendre le bouton invisible pour bien placer l'autre */
@@ -345,7 +341,6 @@ nav a {
 /* Création du bas de page */
 .down-page {
     background-color: black;
-    /* height: 200px; */
     padding: 10px;
     margin-top: 50px;
     background-size: cover;
